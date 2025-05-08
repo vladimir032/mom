@@ -1,0 +1,21 @@
+{
+    "name": "Пожелания каждый день",
+    "short_name": "Пожелания",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fbd3e9",
+    "theme_color": "#fbd3e9",
+    "icons": [
+      {
+        "src": "public/icons/icon-192.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "public/icons/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
