@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { launchConfetti } from '../utils/confetti';
+
 
 
 export default function MoodSelector({ onSelectMood }) {
@@ -16,7 +18,13 @@ export default function MoodSelector({ onSelectMood }) {
           <span
             key={index}
             className="mood"
-            onClick={() => onSelectMood(mood.label)}
+            onClick={() => {
+              onSelectMood(mood.label);
+              if (mood.label === 'Хорошо') {
+                launchConfetti();
+              }
+            }}
+
           >
             {mood.icon}
           </span>
